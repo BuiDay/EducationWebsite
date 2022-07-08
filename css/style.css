@@ -114,9 +114,9 @@ nav {
   z-index: 11;
 }
 
-.window-srcoll{
-    background: var(--color-primary);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3) ;
+.window-srcoll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .nav__container {
@@ -184,8 +184,8 @@ header {
 }
 
 .categories__left {
-    padding-right: 4rem;
-  }
+  padding-right: 4rem;
+}
 
 .categories__left p {
   margin: 1rem 0 3rem;
@@ -204,74 +204,160 @@ header {
   transition: var(--transistion);
 }
 
-.category:nth-child(2) .category__icon{
-    background: var(--color-danger);
+.category:nth-child(2) .category__icon {
+  background: var(--color-danger);
 }
 
-.category:nth-child(3) .category__icon{
-    background: var(--color-success);
+.category:nth-child(3) .category__icon {
+  background: var(--color-success);
 }
 
-.category:nth-child(4) .category__icon{
-    background: var(--color-warning);
+.category:nth-child(4) .category__icon {
+  background: var(--color-warning);
 }
 
-.category:nth-child(5) .category__icon{
-    background: var(--color-primary);
+.category:nth-child(5) .category__icon {
+  background: var(--color-primary);
 }
 
-.category:nth-child(6) .category__icon{
-    background: var(--color-danger);
+.category:nth-child(6) .category__icon {
+  background: var(--color-danger);
 }
 
 .category:hover {
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-.category__icon{
-    background:var(--color-primary);
-    padding: 0.7rem;
-    border-radius: 0.9rem;
-    font-size: 1.5rem;
+.category__icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+  font-size: 1.5rem;
 }
 
-.category h5{
-    margin: 2rem 0 1rem;
+.category h5 {
+  margin: 2rem 0 1rem;
 }
 
-.category p{
-   font-size: 0.85rem;
+.category p {
+  font-size: 0.85rem;
 }
 
 /*--------------------------------Courses----------------------------------*/
 
 .courses {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .courses__container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.course{
-    background: var(--color-bg1);
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transistion);
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transistion);
 }
 
-.course:hover{
-    background: transparent;
-    border-color: var(--color-bg1);
+.course:hover {
+  background: transparent;
+  border-color: var(--color-bg1);
 }
 
 .course__info {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .course__info p {
-    margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
 }
+
+/*--------------------------------Faqs----------------------------------*/
+
+.faqs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.faq {
+  display: flex;
+  background: var(--color-primary);
+  padding: 2rem 2rem;
+  align-items: center;
+  height: fit-content;
+  gap: 1.5rem;
+  cursor: pointer;
+  transition: var(--transistion);
+}
+
+.faq h4 {
+  font-size: 1rem;
+  line-height: 2.2;
+}
+
+.faq__icon {
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+.faq P {
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.faq.open p {
+  display: block;
+}
+
+/*--------------------------------Testimonials---------------------------------*/
+
+.testimonials__container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.testimonial__info {
+  text-align: center;
+}
+
+.testimonial__body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.testimonial__body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0rem;
+  height: 0rem;
+  left: 45%;
+  top:-1.7rem;
+  border-left:30px solid transparent;
+  border-right:30px solid transparent;
+  border-bottom:30px solid var(--color-primary);
+}
+
+
