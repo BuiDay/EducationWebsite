@@ -354,10 +354,72 @@ header {
   width: 0rem;
   height: 0rem;
   left: 45%;
-  top:-1.7rem;
-  border-left:30px solid transparent;
-  border-right:30px solid transparent;
-  border-bottom:30px solid var(--color-primary);
+  top: -1.7rem;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid var(--color-primary);
 }
 
+/*--------------------------------Footer---------------------------------*/
+.footer {
+  background: var(--color-bg1);
+}
 
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/*--------------------------------Footer---------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1{
+    font-size: 2.2rem;
+  }
+
+  h2{
+    font-size: 1.7rem;
+  }
+
+  h3{
+    font-size: 1.4rem;
+  }
+
+  h4{
+    font-size: 1.2rem;
+  }
+
+  nav button{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+}
