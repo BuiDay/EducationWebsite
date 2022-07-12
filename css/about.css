@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3276;
+  --color-bg2: #424890;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  transition: all 400ms ease;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--color-white);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transistion);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+.achievements {
+  padding-top: 1rem;
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 80vh;
+  margin-bottom: 1rem;
+}
+
+.achievements__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+  gap: 5rem;
+}
+
+.achievement__left img {
+  width: 100%;
+}
+
+.achievement__right h1 {
+  margin-bottom: 2rem;
+}
+
+.achievement__right p {
+  margin-bottom: 2rem;
+}
+
+.achievement__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.achievement__card {
+  background: var(--color-bg1);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+
+.achievement__card:hover {
+  background: var(--color-bg2);
+}
+
+.achievement__icon {
+  background: var(--color-danger);
+  padding: 0.5rem;
+  font-size: 2rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.achievement__card:nth-child(2) .achievement__icon {
+  background-color: var(--color-success);
+}
+
+.achievement__card:nth-child(3) .achievement__icon {
+  background-color: var(--color-primary);
+}
+
+.achievement__card h3 {
+  margin-top: 2rem;
+}
+
+.achievement__card p {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.team__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team {
+  background: var(--color-bg1);
+  border: 1px solid var(--color-bg2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.team__img img {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  filter: saturate(0);
+}
+
+
+.team h4 {
+  margin-bottom: 1rem;
+}
+
+.team p {
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.team__social {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transition: all 0.4s ease;
+  top:40%;
+  right: -100%;
+  transform: translateY(-30%);
+}
+
+
+
+.team__social a{
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  transition: var(--transistion);
+}
+
+.team:hover {
+  background: transparent;
+}
+
+.team:hover .team__social{
+  right: 0;
+}
+
+.team:hover img{
+  filter: saturate(1);
+}
+@media screen and(max-width: 1024px) {
+  body{
+    background:red ;
+  }
+}
